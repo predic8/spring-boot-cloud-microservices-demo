@@ -1,0 +1,7 @@
+GET http://localhost:8888/actuator
+
+###
+
+GET http://localhost:8888/bestell-service/default
+
+###

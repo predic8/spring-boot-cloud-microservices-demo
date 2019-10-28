@@ -1,0 +1,30 @@
+server:
+  port: 8888
+
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:config-repo
+#
+#          uri: file://Users/thomas/work/microservices-frameworks/spring-boot/config-repo
+#          uri: https://gitea.predic8.de/thomas/cloud-config
+
+# spring.cloud.config.server.git.basedir
+
+
+management:
+  endpoint:
+    health:
+      show-details: always
+
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    prometheus:
+      enabled: true

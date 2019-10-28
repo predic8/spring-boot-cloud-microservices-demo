@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: bestell-service
+  server:
+    port: 8080
+
+management:
+  endpoint:
+    health:
+      show-details: always
+
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    prometheus:
+      enabled: true
+
+
+

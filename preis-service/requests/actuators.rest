@@ -1,0 +1,8 @@
+GET http://localhost:8081/actuator
+
+###
+
+GET http://localhost:8081/actuator/mappings
+
+###
+

@@ -1,0 +1,21 @@
+POST http://localhost:8080/bestellungen
+Content-Type: application/json
+
+{
+  "positionen": [
+    {
+      "menge": 3,
+      "artikel": "Kaffee"
+    },
+    {
+      "menge": 1,
+      "artikel": "Tee"
+    },
+    {
+      "menge": 2,
+      "artikel": "Wasser"
+    }
+  ]
+}
+
+###
